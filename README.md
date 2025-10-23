@@ -2,6 +2,8 @@
 
 An AI chatbot for financial customer support using local LLM (Llama 3.1).
 
+---
+
 ## Features
 - ✅ Natural language financial query handling
 - ✅ Local LLM (no API costs)
@@ -9,17 +11,21 @@ An AI chatbot for financial customer support using local LLM (Llama 3.1).
 - ✅ Conversation history storage
 - ✅ Dockerized deployment
 
+---
+
 ## Requirements
-- Docker Desktop
-- WSL2 (for Windows)
-- 8GB RAM minimum
+- Docker Desktop  
+- WSL2 (for Windows)  
+- 8GB RAM minimum  
+
+---
 
 ## Installation & Running
 
 ### Option 1: Run with Docker (Recommended)
 ```bash
 docker-compose up --build
-```
+
 Access at: http://localhost:8501
 
 ### Option 2: Run Locally
@@ -54,16 +60,20 @@ streamlit run app.py
 
 ## Project Structure
 ```
-financial-chatbot/
-├── app.py                 # Main Streamlit application
+AI-Finance BOT/
+├── app.py                 # Main application
 ├── llm_handler.py         # LLM interaction logic
-├── database.py            # SQLite database operations
+├── database.py            # Database operations
 ├── entity_extractor.py    # Entity extraction logic
 ├── Dockerfile             # Docker configuration
 ├── docker-compose.yml     # Docker Compose setup
+├── get-docker.sh          # Script to install Docker
+├── start.sh               # Script to start the application
 ├── requirements.txt       # Python dependencies
+├── README.md              # Project documentation
+├── .docker/               # Docker-related hidden files
 └── data/                  # Database storage
 ```
 
 ## Author
-[Your Name]
+[Vansh shrivastava]
